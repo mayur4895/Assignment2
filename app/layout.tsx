@@ -15,7 +15,7 @@ import {
  
  
  
-import ModalProvider from '@/components/providers/modal-provider';
+ 
 import { ThemeProvider } from '@/components/providers/ThemeProvider';
 const font = Poppins({
   weight: ['200', '300', '400', '500', '600', '700', '800', '900'],
@@ -47,7 +47,7 @@ export default function RootLayout({
  
               {children}
               <Toaster />
-            <ModalProvider />
+ 
           </ThemeProvider>
         </body>
       </html>

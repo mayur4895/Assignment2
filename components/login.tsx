@@ -27,7 +27,7 @@ import { redirect, useRouter } from "next/navigation";
 
 import { CalendarIcon, Loader2 } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { useModal } from "@/hooks/use-modal-store";
+import { useModal } from "@/hooks/store";
 import {
   Card,
   CardDescription,
