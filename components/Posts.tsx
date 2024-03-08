@@ -13,7 +13,7 @@ import Image from 'next/image';
 import { AiFillLike } from "react-icons/ai";
 const Posts = () => {
 const [posts,setposts] = useState<never[] | any>([]);
-const [comments,setcomments] = useState<never[] | any>([]);
+ 
 const [isloding,setisloding] = useState(false);
 
 
@@ -44,7 +44,7 @@ try {
     setisloding(false);
   }
 }
-console.log(comments);
+ ;
 
  
 useEffect(() =>{
@@ -85,8 +85,8 @@ useEffect(() =>{
                     <span>{post?.email}</span>
                         <CardTitle className="text-xl">{post?.title}</CardTitle> 
                     </CardHeader>
-                    <a href={post.url}> 
-                    <Image className=' h-auto w-auto' alt="thumbnail" src={post.thumbnail} height={200} width={400} />
+                    <a href={post.sourceUrl}> 
+                    <Image className=' h-[400] w-[500px]' alt="thumbnail" src={post.thumbnail} height={500} width={600} />
                     </a>
                     <CardFooter className="p-0"> 
                     <div className='flex flex-col '>

@@ -1,7 +1,6 @@
 'use client'
 import Header from '@/components/Header'
 import Posts from '@/components/Posts'
-import Tasks from '@/components/Todos'
 import { Button } from '@/components/ui/button'
 import { useToast } from '@/components/ui/use-toast'
 import { currentUser } from '@/lib/currentUser'

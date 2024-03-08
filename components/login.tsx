@@ -27,7 +27,7 @@ import { redirect, useRouter } from "next/navigation";
 
 import { CalendarIcon, Loader2 } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { useModal } from "@/hooks/store";
+ 
 import {
   Card,
   CardDescription,
@@ -63,7 +63,7 @@ const Login = () => {
 
   const isloding = form.formState.isSubmitting;
   async function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+     
     try {
       const res = await axios.post("/api/user/login", values); 
       form.reset();
